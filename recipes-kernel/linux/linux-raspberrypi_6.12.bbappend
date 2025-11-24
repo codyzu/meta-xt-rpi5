@@ -58,3 +58,5 @@ SRC_URI:append = " \
 SRC_URI:append = "${@bb.utils.contains('MACHINE_FEATURES', 'scmi', ' file://scmi-config.cfg', '', d)}"
 
 SRC_URI:append = " file://0001-dt-Add-the-range-for-axi-to-fix-the-mipX-ranges-issu.patch"
+
+SRC_URI += "file://i2c-enable.cfg"
